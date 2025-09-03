@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatech – Création de sites web</title>
+  <style>
+    /* Reset et style global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Héros */
+    .hero {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffcc00;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .hero button:hover {
+      background-color: #e6b800;
+    }
+
+    /* Packs & prix */
+    .packs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+    }
+    .pack {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .pack:hover {
+      transform: translateY(-5px);
+    }
+    .pack h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .pack p {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+
+    /* Galerie modèles */
+    .gallery {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .gallery h2 {
+      margin-bottom: 30px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    /* Méthodes de paiement */
+    .payment {
+      background-color: #f0f0f0;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .payment h2 {
+      margin-bottom: 20px;
+    }
+    .payment p {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    /* Formulaire contact */
+    .contact {
+      padding: 50px 20px;
+      background: white;
+      text-align: center;
+    }
+    .contact h2 {
+      margin-bottom: 30px;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .contact button {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4e54c8;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background-color: #3b3fc0;
+    }
+
+    /* Bouton WhatsApp flottant */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: transform 0.3s;
+    }
+    .whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer simple */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Héros -->
+  <section class="hero">
+    <h1>Formatech est la solution</h1>
+    <p>Création de sites web modernes, adaptés à vos besoins</p>
+    <button>Contactez-nous</button>
+  </section>
+
+  <!-- Packs & prix -->
+  <section class="packs">
+    <div class="pack">
+      <h3>Pack Vitrine</h3>
+      <p>USD 150 / ~HTG 20,000</p>
+    </div>
+    <div class="pack">
+      <h3>Pack E-commerce</h3>
+      <p>USD 300 / ~HTG 40,000</p>
+    </div>
+    <div class="pack">
+      <h3>Pack Blog</h3>
+      <p>USD 120 / ~HTG 16,000</p>
+    </div>
+    <div class="pack">
+      <h3>Pack École</h3>
+      <p>USD 250 / ~HTG 33,000</p>
+    </div>
+    <div class="pack">
+      <h3>Pack Église</h3>
+      <p>USD 200 / ~HTG 26,000</p>
+    </div>
+    <div class="pack">
+      <h3>Pack Restaurant</h3>
+      <p>USD 220 / ~HTG 29,000</p>
+    </div>
+  </section>
+
+  <!-- Galerie modèles -->
+  <section class="gallery">
+    <h2>Nos modèles</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="modele-vitrine.jpg" alt="Vitrine"></div>
+      <div class="gallery-item"><img src="modele-ecommerce.jpg" alt="E-commerce"></div>
+      <div class="gallery-item"><img src="modele-blog.jpg" alt="Blog"></div>
+      <div class="gallery-item"><img src="modele-ecole.jpg" alt="École"></div>
+      <div class="gallery-item"><img src="modele-eglise.jpg" alt="Église"></div>
+      <div class="gallery-item"><img src="modele-restaurant.jpg" alt="Restaurant"></div>
+    </div>
+  </section>
+
+  <!-- Méthodes de paiement -->
+  <section class="payment">
+    <h2>Méthodes de paiement</h2>
+    <p>MonCash: 509XXXXXXX</p>
+    <p>Virement bancaire local</p>
+    <p>Wise</p>
+  </section>
+
+  <!-- Formulaire contact -->
+  <section class="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Bouton WhatsApp -->
+  <a href="https://wa.me/50943750836" target="_blank" class="whatsapp">💬</a>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Formatech – Tous droits réservés
+  </footer>
+
+</body>
+</html>
